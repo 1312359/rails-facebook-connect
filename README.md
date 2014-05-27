@@ -136,7 +136,7 @@ rails g migration AddColumnsToUsers provider uid picture name token token_expiry
 And run `rake db:migrate` to run this migration
 
 
-Then add the magic `find_for_facebook_oauth` class method user in the callbacks controller. This method will retrieve all user's infos from fb callbacks.
+Then add the `find_for_facebook_oauth` in your user model. This is the one we call in the facebook action of our callbacks controller. This method will retrieve all user's infos from fb callbacks.
 
 ```ruby
 def self.find_for_facebook_oauth(auth)
