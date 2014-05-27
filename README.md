@@ -61,7 +61,7 @@ To protect our keys use the [figaro gem](https://github.com/laserlemon/figaro).
 development:
   FB_ID: 4*********0
   FB_SECRET: 5********************2
-``
+```
 
 - Then modify *config/initializers/devise.rb` to tell devise to use these keys
 
