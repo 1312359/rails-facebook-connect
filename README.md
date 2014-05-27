@@ -65,18 +65,18 @@ development:
 
 - Then modify *config/initializers/devise.rb` to tell devise to use these keys
 
-```
+```ruby
 config.omniauth :facebook, ENV["FB_ID"], ENV["FB_SECRET"]
 ```
 
 - On OS/X you may need to add these two lines instead to disable certificate verifications in development mode.
 
-```
+```ruby
 OpenSSL::SSL::VERIFY_PEER = OpenSSL::SSL::VERIFY_NONE if Rails.env.development?
 config.omniauth :facebook, ENV["FB_ID"], ENV["FB_SECRET"]
 ```
 
-Now you are set up to integrate FB connect in your app (routes/controller/model)
+Now you are set up to integrate FB connect in your core-app (routes/controller/model)
 
 
 ### Add omniauth callbacks controller and routing
