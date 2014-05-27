@@ -1,0 +1,11 @@
+<h1>The infos you get from FB connect</h1>
+
+<ul>
+  <li>Provider: <%= current_user.provider%></li>
+  <li>FB Id: <%= current_user.uid%></li>
+  <li>Picture URL: <%= current_user.picture%></li>
+  <li>FB username: <%= current_user.name%></li>
+  <li>FB token (to use with FB API): <%= "#{current_user.fb_token.from(0).to(10)}..."%></li>
+  <li>FB token expiry: <%= current_user.fb_token_expiry%></li>
+</ul>
+
