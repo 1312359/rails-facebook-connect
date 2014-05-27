@@ -1,4 +1,4 @@
-# Set up
+# Facebook-connect on top of devise
 
 ## Gemfile
 
@@ -74,7 +74,6 @@ config.omniauth :facebook, ENV["FB_ID"], ENV["FB_SECRET"]
 ```
 OpenSSL::SSL::VERIFY_PEER = OpenSSL::SSL::VERIFY_NONE if Rails.env.development?
 config.omniauth :facebook, ENV["FB_ID"], ENV["FB_SECRET"]
-
 ```
 
 Now you are set up to integrate FB connect in your app (routes/controller/model)
