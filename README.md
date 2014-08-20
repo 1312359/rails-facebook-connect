@@ -63,7 +63,7 @@ development:
   FB_SECRET: 5********************2
 ```
 
-- Then modify *config/initializers/devise.rb` to tell devise to use these keys
+- Then modify `config/initializers/devise.rb` to tell devise to use these keys
 
 ```ruby
 config.omniauth :facebook, ENV["FB_ID"], ENV["FB_SECRET"]
