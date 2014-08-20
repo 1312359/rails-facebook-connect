@@ -147,8 +147,8 @@ def self.find_for_facebook_oauth(auth)
       user.password = Devise.friendly_token[0,20]
       user.name = auth.info.name   # assuming the user model has a name
       user.picture = auth.info.image # assuming the user model has an image
-      user.fb_token = auth.credentials.token
-      user.fb_token_expiry = Time.at(auth.credentials.expires_at)
+      user.token = auth.credentials.token
+      user.token_expiry = Time.at(auth.credentials.expires_at)
   end
 end
 ```
