@@ -28,7 +28,7 @@ Then run `bundle install`.
 Run the following devise generators. Skip these steps if you have already integrated devise.
 
 - `rails generate devise:install` then follow instructions from terminal
-- `rails generate devise:model User`
+- `rails generate devise User`
 - `rails generate devise:views` if you want to override devise signin/signup views
 - `rake db:migrate` to create the `users` table with devise fields (email, psswd)
 
